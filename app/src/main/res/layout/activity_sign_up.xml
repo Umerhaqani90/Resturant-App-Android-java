@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/textView_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/candal"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/RL_middel"
+        android:layout_below="@id/textView_signup"
+        android:layout_width="match_parent"
+        android:layout_above="@id/RL_bottom"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_one"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_two"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_three"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/candal"
+                android:text="Lets Join Us"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/_30sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:text="We would Love to see you to join us"
+                android:textAllCaps="false"
+                android:textColor="#ff0000"
+                 />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_42sdp"
+                android:layout_marginStart="@dimen/_42sdp"
+                android:layout_marginEnd="@dimen/_42sdp"
+                android:layout_marginRight="@dimen/_42sdp">
+
+                <ImageView
+                    android:id="@+id/imageView_googleplus"
+                    android:contentDescription="google img"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/googleplusoutline"
+                    android:src="@drawable/gplus"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"/>
+
+                <ImageView
+                    android:id="@+id/imageView_facebook"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/fblogo"
+                    android:background="@drawable/facebookoutline"/>
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:text="We have multiple options for you to join us"
+                android:textAllCaps="false"
+                android:textColor="#ff539c"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_linear_login_signup"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:weightSum="1.2"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_outline_person_outline_24"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/Ed_su_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00FFFFFF"
+                    android:hint="Enter Name"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="@dimen/_13sdp"
+                    android:inputType="textEmailAddress"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_linear_login_signup"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:weightSum="1.2"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_mail_outline_24"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/Ed_su_email"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00FFFFFF"
+                    android:hint="Enter Email"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="@dimen/_13sdp"
+                    android:inputType="textEmailAddress"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_linear_login_signup"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:weightSum="1.2"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_outline_lock_24"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/Ed_su_password"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00FFFFFF"
+                    android:hint="Enter Password"
+                    android:fontFamily="sans-serif-light"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/_13sdp"/>
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imagebtn_su_submit"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/red_btn_bg"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_outline_arrow_forward_24"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RL_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2.1"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_34sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            >
+
+            <Button
+                android:id="@+id/btn_su_signin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_btn_bg"
+                android:layout_height="@dimen/_45sdp"
+                android:text="Sign In"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-light"
+                android:textSize="@dimen/_13sdp"
+                />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"/>
+            <Button
+                android:id="@+id/btn_su_signup"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_btn_bg"
+                android:layout_height="@dimen/_45sdp"
+                android:text="Sign Up"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FB0303"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

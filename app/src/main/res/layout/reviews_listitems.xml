@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:elevation="16dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_16sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_image"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/imgReviewPerson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/homeimage" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/NameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/card_image"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_4sdp">
+
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/reviewerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muhammad Usama Hafeez"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/reviewerTableDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Table Reserved 24-Jan 2020" />
+
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:id="@+id/reviewerAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="North Nazimabad karachi" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/downMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/NameLayout"
+                android:paddingTop="@dimen/_8sdp"
+                android:src="@drawable/ic_baseline_down_24" />
+
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/ratingBars"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_below="@id/card_image"
+                android:layout_marginTop="8dp"
+                android:outlineAmbientShadowColor="#FFD700"
+                android:outlineSpotShadowColor="#FFD700"
+                android:progressTint="#FFD700"
+                android:progressTintMode="src_in" />
+
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/txtReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratingBars"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:text="Have a best fine quality dinner" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

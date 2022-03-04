@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageViewAddResImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:src="@drawable/addrestaurant"
+                android:scaleType="fitXY"
+                />
+
+            <ImageButton
+                android:id="@+id/imagebtn_add_res_back"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#00FFFFFF"/>
+
+            <ImageButton
+                android:id="@+id/imagebtn_add_res_setting"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_baseline_settings_24"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="#00FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tv_addrestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagebtn_add_res_back"
+                android:text="Add Restaurant"
+                android:textSize="@dimen/_25sdp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/candal"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_addrestaurant"
+                app:cardCornerRadius="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:weightSum="1.2"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_address_person_24"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/Ed_add_res_name"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#00FFFFFF"
+                            android:hint="Restaurant Name"
+                            android:textColorHint="@color/addrestextcolor"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="@dimen/_13sdp"
+                            android:inputType="text"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:weightSum="1.2"
+                        android:layout_marginTop="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_person_outline_24"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/Ed_add_res_managername"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#00FFFFFF"
+                            android:hint="Manager Name"
+                            android:textColorHint="@color/addrestextcolor"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="@dimen/_13sdp"
+                            android:inputType="text"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:weightSum="1.2"
+                        android:layout_marginTop="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_person_outline_24"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/Ed_add_res_contact"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#00FFFFFF"
+                            android:hint="Contact"
+                            android:textColorHint="@color/addrestextcolor"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="@dimen/_13sdp"
+                            android:inputType="phone"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:weightSum="1.2"
+                        android:layout_marginTop="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_person_outline_24"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/Ed_add_res_adress"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#00FFFFFF"
+                            android:hint="Address"
+                            android:textColorHint="@color/addrestextcolor"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="@dimen/_13sdp"
+                            android:inputType="textEmailAddress"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:weightSum="1.2"
+                        android:layout_marginTop="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_person_outline_24"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/Ed_add_ress_kind_food"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#00FFFFFF"
+                            android:hint="Kind of food"
+                            android:textColorHint="@color/addrestextcolor"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="@dimen/_13sdp"
+                            android:inputType="textEmailAddress"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:weightSum="1.2"
+                        android:layout_marginTop="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_person_outline_24"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/Ed_add_res_table"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#00FFFFFF"
+                            android:hint="No of table"
+                            android:textColorHint="@color/addrestextcolor"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="@dimen/_13sdp"
+                            android:inputType="textEmailAddress"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:weightSum="1.2"
+                        android:layout_marginTop="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_person_outline_24"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/Ed_add_res_waiter"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#00FFFFFF"
+                            android:hint="No of waiters"
+                            android:textColorHint="@color/addrestextcolor"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="@dimen/_13sdp"
+                            android:inputType="textEmailAddress"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:weightSum="1.2"
+                        android:layout_marginTop="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_person_outline_24"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/Ed_add_res_chef"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#00FFFFFF"
+                            android:hint="No of chefs"
+                            android:textColorHint="@color/addrestextcolor"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="@dimen/_13sdp"
+                            android:inputType="textEmailAddress"
+                            />
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnAddRestaurantsNext"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/red_btn_bg"
+                        android:text="Next"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/_18sdp"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

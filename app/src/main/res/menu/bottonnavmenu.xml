@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item_btm_home"
+        android:title=""
+        android:icon="@drawable/ic_outline_home_24"/>
+    <item android:id="@+id/item_btm_reservation"
+        android:title=""
+        android:icon="@drawable/ic_outline_deck_24"/>
+    <item android:id="@+id/item_btm_notification"
+        android:title=""
+        android:icon="@drawable/ic_outline_notifications_24"/>
+    <item android:id="@+id/item_btm_profile"
+        android:title=""
+        android:icon="@drawable/ic_outline_address_person_24"/>
+
+</menu>

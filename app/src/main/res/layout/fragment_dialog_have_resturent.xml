@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/haverestaurant">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_260sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do You have \nRestaurant?"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/candal"
+                    android:textColor="#ff0000"/>
+
+                <Button
+                    android:id="@+id/btn_res_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/red_btn_bg"
+                    android:text="Yes"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="#ffffff"
+                    />
+
+                <Button
+                    android:id="@+id/btn_res_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/red_btn_bg"
+                    android:text="No"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="#ffffff"
+                    />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

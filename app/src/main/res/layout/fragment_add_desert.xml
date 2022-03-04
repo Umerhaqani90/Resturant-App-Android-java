@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/startMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageAddDesert"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_add_starter"
+                app:layout_collapseMode="parallax" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_add_res_back"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_add_res_setting"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/ic_baseline_settings_24" />
+
+            <TextView
+                android:id="@+id/tv_addrestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagebtn_add_res_back"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="111dp"
+                android:fontFamily="@font/candal"
+                android:text="Add Desert"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_25sdp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startMain"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtDesertName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:padding="@dimen/_20sdp" />
+
+            <EditText
+                android:id="@+id/edtDesertPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:padding="@dimen/_20sdp" />
+
+            <EditText
+                android:id="@+id/edtDesertDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:padding="@dimen/_20sdp" />
+
+
+            <LinearLayout
+                android:id="@+id/addPhotoDesertLayout"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="@drawable/border_imag_center"
+                android:padding="@dimen/_32sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_outline_image_24" />
+
+                <TextView
+                    android:textColor="@color/black_color"
+                    android:layout_gravity="center"
+                    android:text="Add Photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnAnotherDesert"
+                android:padding="@dimen/_16sdp"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:text="Add Another"
+                android:background="@drawable/btnborder"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddDesert"
+                android:background="@null"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:padding="@dimen/_8sdp"
+                android:layout_gravity="center"
+                android:text="@string/done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
